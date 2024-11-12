@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Celebration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/snowfall.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Holiday Celebration!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pages/recipes.html">Recipes</a>
+            <a href="pages/gifts.html">Gift Guide</a>
+            <a href="pages/calendar.html">Event Calendar</a>
+            <a href="pages/decorating.html">Decorating Ideas</a>
+            <a href="pages/traditions.html">Tradition Spotlight</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Celebrate the Season with Us!</h2>
+        <p>Explore holiday recipes, gift guides, events, decorating tips, and more to make your season bright.</p>
+    </section>
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const snowflakeCount = 100; // Number of snowflakes
+    
+            for (let i = 0; i < snowflakeCount; i++) {
+                let snowflake = document.createElement("div");
+                snowflake.classList.add("snowflake");
+    
+                // Random size, position, and animation duration
+                let size = Math.random() * 5 + 2 + "px";
+                snowflake.style.width = size;
+                snowflake.style.height = size;
+                snowflake.style.left = Math.random() * 100 + "vw";
+                snowflake.style.animationDuration = (Math.random() * 5 + 5) + "s";
+                snowflake.style.animationDelay = Math.random() * 5 + "s";
+    
+                document.body.appendChild(snowflake);
+            }
+        });
+    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const leafCount = 50; // Number of leaves
+    
+            for (let i = 0; i < leafCount; i++) {
+                let leaf = document.createElement("div");
+                leaf.classList.add("leaf");
+    
+                // Add random class for color variations (optional)
+                leaf.classList.add("leaf" + (Math.floor(Math.random() * 3) + 1));
+    
+                // Set random size, position, and animation duration
+                let size = Math.random() * 20 + 20 + "px"; // Random size between 20px and 40px
+                leaf.style.width = size;
+                leaf.style.height = size;
+                leaf.style.left = Math.random() * 100 + "vw";
+                leaf.style.animationDuration = (Math.random() * 5 + 5) + "s"; // Random fall speed
+                leaf.style.animationDelay = Math.random() * 5 + "s";
+    
+                document.body.appendChild(leaf);
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F0E3; /* Warm, light beige background */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+}
+
+/* Colors for the holiday theme */
+:root {
+    --primary-color: #A52A2A; /* Deep red */
+    --accent-color: #228B22; /* Forest green */
+    --background-color: #F8F0E3;
+    --light-color: #FFF5E4; /* Light warm background for sections */
+}
+
+/* Styling for the Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #FFF5E4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700; /* Golden color for hover effect */
+}
+
+/* Main Section Styling */
+section {
+    padding: 2rem;
+    background-color: var(--light-color);
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+}
+
+ul li strong {
+    color: var(--accent-color);
+}
+
+/* Buttons */
+button, a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background-color: #006400; /* Darker green */
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    nav a {
+        font-size: 0.9rem;
+    }
+}
+/* Snowfall container */
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Snowflake styling 
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+/* Create individual snowflakes 
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(20vw);
+        opacity: 0.1;
+    }
+}*/
+/* Leaves container */
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Leaf shape variations with different leaf images (optional) */
+.leaf.leaf1 { background-image: image(../images/mapleLeaf); }
+.leaf.leaf2 { background-image: url(https://unsplash.com/photos/gjZGm8YQ-a8); }
+.leaf.leaf3 { background-image: url('https://unsplash.com/photos/PBzR6Vjtt6w'); }
+
+/* Animation for falling leaves */
+@keyframes fallLeaf {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg); /* Full rotation */
+        opacity: 0.5; /* Leaves fade slightly as they fall */
+    }
+}
+
