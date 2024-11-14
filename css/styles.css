@@ -124,7 +124,7 @@ body {
     position: relative;
 }
 
-/* Snowflake styling 
+/*Snowflake styling*/ 
 .snowflake {
     position: absolute;
     top: -10px;
@@ -135,7 +135,7 @@ body {
     pointer-events: none;
 }
 
-/* Create individual snowflakes 
+/* Create individual snowflakes */
 @keyframes fall {
     0% {
         transform: translateY(0) translateX(0);
@@ -145,28 +145,10 @@ body {
         transform: translateY(100vh) translateX(20vw);
         opacity: 0.1;
     }
-}*/
-/* Leaves container */
-body {
-    overflow: hidden;
-    position: relative;
 }
 
 
-/* Leaf shape variations with different leaf images (optional) */
-.leaf.leaf1 { background-image: image(../images/mapleLeaf); }
-.leaf.leaf2 { background-image: url(https://unsplash.com/photos/gjZGm8YQ-a8); }
-.leaf.leaf3 { background-image: url('https://unsplash.com/photos/PBzR6Vjtt6w'); }
 
-/* Animation for falling leaves */
-@keyframes fallLeaf {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg); /* Full rotation */
-        opacity: 0.5; /* Leaves fade slightly as they fall */
-    }
-}
+
+
 
